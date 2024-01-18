@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Components/Layout/Header/Header'
 import Home from './Pages/Home'
+import Footer from './Components/Layout/Footer/Footer'
 // import Authmiddleware from './Routes/Routes'
 // import { authProtectedRoutes, publicRoutes } from './Routes/Index'
 
@@ -33,6 +34,7 @@ function App() {
       </Router> */}
       <Header />
       <Home />
+      <Footer />
     </>
   )
 }
