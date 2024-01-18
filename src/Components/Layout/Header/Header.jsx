@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <>
       <SocialBar />
-    <div className='Header'>
-      <MainHeader />
-    </div>
+      <div className='Header'>
+        <MainHeader />
+      </div>
     </>
   )
 }
