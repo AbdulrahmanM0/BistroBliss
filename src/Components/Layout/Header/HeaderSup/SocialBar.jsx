@@ -6,7 +6,7 @@ export default function SocialBar() {
   return (
         <div className='socialBar p-2'>
           <Container>
-              <div className='d-flex justify-content-between align-items-center social-container'>
+              <div className='social-container'>
                 <ul className='font-size-13 d-flex'>
                   <li> <div><i className="bi bi-telephone me-1"></i>  (414) 857 - 0107 </div></li>
                   <li> <div className='m-3'></div></li>

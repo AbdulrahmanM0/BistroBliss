@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './Components/Layout/Header/Header'
 import Home from './Pages/Home'
 import Footer from './Components/Layout/Footer/Footer'
+import AOS from 'aos';
+
 // import Authmiddleware from './Routes/Routes'
 // import { authProtectedRoutes, publicRoutes } from './Routes/Index'
 
 function App() {
+
+  useEffect(()=>{
+    AOS.init()
+  },[])
 
   return (
     <>

@@ -38,7 +38,7 @@ export default function BrowsSection() {
                 <div >
                     <SectionHead title={'Browse Our Menu'}/>
                 </div>
-                <div className='p-5'>
+                <div className='p-5' data-aos="fade-right"  data-aos-duration="3000">
                     <Row className='justify-content-center'>
                     {
                         cardData.map(card => (
