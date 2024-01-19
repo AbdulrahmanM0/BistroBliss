@@ -1,4 +1,6 @@
 $weetColor : #b5b9ac;
+$lightWeetColor: #F3F3F0;
+$darkWeetColor: #595C4F;
 $redColor : #AD343E;
 $grayColor: #474747;
 $white: #fff;
@@ -46,6 +48,15 @@ a{
     font-size: 21px;
 }
 
+// common
+.section{
+    padding: 50px 0;
+}
+.section-head{
+    font-family: bootstrap-icons;
+    text-align: center;
+    padding: 20px;
+}
 // Header
 .socialBar{
     background-color: rgb(72, 72, 72);
@@ -258,3 +269,37 @@ a{
         }
     }
 }
+.brows-section{
+    .brows-card{
+        border: 2px solid $weetColor;
+        padding: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        // min-width: 278px;
+
+        .card-icon{
+            margin: auto;
+            margin-bottom: 30px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: $lightWeetColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+        .card-title{
+            margin-bottom: 20px;
+        }
+        .card-body{
+            color: $darkWeetColor;
+        }
+        .card-link{
+            font-weight: 600;
+            color: $redColor;
+        }
+    }
+}
+
