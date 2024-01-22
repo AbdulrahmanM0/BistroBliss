@@ -1,4 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
   const [windowWidth , setWindowWidth] = useState()
@@ -21,11 +22,11 @@ export default function Navbar() {
       <div className='navbar'>
       <nav>
           <ul>
-              <li><a href='/'>Home</a></li>
-              <li><a href='/'>About</a></li>
-              <li><a href='/'>Menu</a></li>
-              <li><a href='/'>Pages</a></li>
-              <li><a href='/'>Contact</a></li>
+              <li><Link to='/'  className="nav-link" activeClassName="active-link">Home</Link></li>
+              <li><Link to='/about'  className="nav-link" activeClassName="active-link">About</Link></li>
+              <li><Link to='/menu'  className="nav-link" activeClassName="active-link">Menu</Link></li>
+              {/* <li><Link to='/'>Pages</Link></li>
+              <li><Link to='/'>Contact</Link></li> */}
           </ul>
       </nav>
   </div>

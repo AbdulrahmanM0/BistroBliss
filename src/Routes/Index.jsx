@@ -1,8 +1,9 @@
 import React from "react";
-import { Redirect } from "react-router-dom"
+// import { Redirect } from "react-router-dom"
 
 // Home page
 import Home from "../Pages/Home";
+import About from "../Pages/About"
 
 const authProtectedRoutes = [
     //profile
@@ -10,7 +11,7 @@ const authProtectedRoutes = [
 ]
 const publicRoutes = [
     { path: "/" , component: Home},
-    // { path: "/login", component: Login },
+    { path: "/about", component: About },
     // { path: "/", exact: true, component: () => <Redirect to="/Home" /> },
 
   ]

@@ -66,6 +66,7 @@ a{
 }
 
 
+
 // Header
 .socialBar{
     background-color: rgb(72, 72, 72);
@@ -137,19 +138,18 @@ a{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            a{
+                            .nav-link{
                                 color: #000;
                                 font-weight: 600;
                                 font-size: 1.05rem;
                                 border-radius: 20px;
-                                background-color: #DBDFD0;
                                 padding: 7px 15px;
-    
                             }
-                            a:active{
+                            .nav-link:active{
                                 color: red;
+                                background-color: #DBDFD0;
                             }
-    
+
                         }
                     }
                 }
@@ -164,7 +164,10 @@ a{
 
 
 }
-
+.active-link{
+    color: red;
+    background-color: #DBDFD0;
+}
 // Footer
 .footer{
     footer{
@@ -177,7 +180,7 @@ a{
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 100px 0;
-
+                
             .slice1{
                 margin-bottom: 20px;
                 .logo{
@@ -297,7 +300,9 @@ a{
         padding: 40px;
         text-align: center;
         margin-bottom: 20px;
+        min-height: 100%;
         // min-width: 278px;
+        transition: 1s;
 
         .card-icon{
             margin: auto;
@@ -322,6 +327,12 @@ a{
             font-weight: 600;
             color: $redColor;
         }
+    }
+    .brows-card:hover{
+        background-image: url('../Images/home-page/sky.avif');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 .visitus-section{

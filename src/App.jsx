@@ -3,7 +3,7 @@ import Header from './Components/Layout/Header/Header'
 import Home from './Pages/Home'
 import Footer from './Components/Layout/Footer/Footer'
 import AOS from 'aos';
-
+// import { Routes , B} from "react-router-dom"
 // import Authmiddleware from './Routes/Routes'
 // import { authProtectedRoutes, publicRoutes } from './Routes/Index'
 
@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       {/* <Router>
-        <Switch> */}
-        {/* {publicRoutes.map((route, idx) => (
+        <Switch>
+        {publicRoutes.map((route, idx) => (
             <Authmiddleware
               path={route.path}
               component={route.component}
@@ -25,9 +25,9 @@ function App() {
               isAuthProtected={false}
               exact
             />
-          ))} */}
+          ))}
 
-          {/* {authProtectedRoutes.map((route, idx) => (
+          {authProtectedRoutes.map((route, idx) => (
             <Authmiddleware
               path={route.path}
               component={route.component}
@@ -35,11 +35,11 @@ function App() {
               isAuthProtected={true}
               exact
             />
-          ))} */}
-        {/* </Switch>
-      </Router> */}
+          ))}
+        </Switch>
+        </Router> */}
       <Header />
-      <Home />
+        <Home />
       <Footer />
     </>
   )
