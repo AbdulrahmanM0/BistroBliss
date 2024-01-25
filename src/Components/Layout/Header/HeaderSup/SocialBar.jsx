@@ -14,9 +14,9 @@ export default function SocialBar() {
                 </ul>
                 <ul className='d-flex social-icons'>
                   <li><a href='#'><div><i className="bi bi-twitter-x"></i></div></a></li>
-                  <li><a href='#'><div><i class="bi bi-instagram"></i></div></a></li>
-                  <li><a href='#'><div><i class="bi bi-github"></i></div></a></li>
-                  <li><a href='#'><div><i class="bi bi-facebook"></i></div></a></li>
+                  <li><a href='#'><div><i className="bi bi-instagram"></i></div></a></li>
+                  <li><a href='#'><div><i className="bi bi-github"></i></div></a></li>
+                  <li><a href='#'><div><i className="bi bi-facebook"></i></div></a></li>
                 </ul>
               </div>
           </Container>
