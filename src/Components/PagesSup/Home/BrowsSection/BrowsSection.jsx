@@ -7,25 +7,25 @@ export default function BrowsSection() {
 
     const cardData = [
         {
-            cardIcon: <i class="bi bi-cup-hot"></i>,
+            cardIcon: <i className="bi bi-cup-hot"></i>,
             cardTitle: 'Breakfast',
             cardBody: 'In the new era of technology we look in the future with certainty and pride for our life.',
             cardLink: 'Explore Menu', 
         },
         {
-            cardIcon:  <i class="bi bi-egg-fried"></i>,
+            cardIcon:  <i className="bi bi-egg-fried"></i>,
             cardTitle: 'Main Dishes',
             cardBody: 'In the new era of technology we look in the future with certainty and pride for our life.',
             cardLink: 'Explore Menu', 
         },
         {
-            cardIcon: <i class="bi bi-cup-straw"></i>,
+            cardIcon: <i className="bi bi-cup-straw"></i>,
             cardTitle: 'Drinks',
             cardBody: 'In the new era of technology we look in the future with certainty and pride for our life.',
             cardLink: 'Explore Menu', 
         },
         {
-            cardIcon: <i class="bi bi-cake2"></i>,
+            cardIcon: <i className="bi bi-cake2"></i>,
             cardTitle: 'Desserts',
             cardBody: 'In the new era of technology we look in the future with certainty and pride for our life.',
             cardLink: 'Explore Menu', 
@@ -41,8 +41,8 @@ export default function BrowsSection() {
                 <div className='p-5' data-aos="fade-right"  data-aos-duration="3000">
                     <Row className='justify-content-center'>
                     {
-                        cardData.map(card => (
-                            <Col sm={8} md={6} lg={3}>
+                        cardData.map((card,key) => (
+                            <Col key={key} sm={8} md={6} lg={3}>
                                 <Card cardIcon={card.cardIcon} cardTitle={card.cardTitle} cardBody={card.cardBody} cardLink={card.cardLink}/>
                             </Col>
                         ))
