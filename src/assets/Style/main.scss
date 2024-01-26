@@ -426,3 +426,41 @@ a {
     max-height: 655px;
   }
 }
+.opinions-section {
+  .content {
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+    }
+    .user-card {
+      background-color: $secondWhite;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      .top-part {
+        border-bottom: 1px solid #7474742a;
+      }
+      .down-part {
+        display: flex;
+        padding: 20px 0;
+        margin-top: 10px;
+        .userdata {
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+      }
+      h5 {
+        color: #ad343e;
+      }
+      p {
+        color: #414536;
+      }
+    }
+  }
+}
