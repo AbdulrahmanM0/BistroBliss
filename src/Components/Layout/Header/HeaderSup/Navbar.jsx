@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [windowWidth, setWindowWidth] = useState();
@@ -19,30 +19,30 @@ export default function Navbar() {
           <nav>
             <ul>
               <li>
-                <Link to="/" className="nav-link" activeclassname="active-link">
+                <NavLink to="/" className="nav-link" activeClassName="active-link">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/about"
                   className="nav-link"
-                  activeclassname="active-link"
+                  activeClassName="active-link"
                 >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/menu"
                   className="nav-link"
-                  activeclassname="active-link"
+                  activeClassName="active-link"
                 >
                   Menu
-                </Link>
+                </NavLink>
               </li>
-              {/* <li><Link to='/'>Pages</Link></li>
-              <li><Link to='/'>Contact</Link></li> */}
+              {/* <li><NavLink to='/'>Pages</NavLink></li>
+              <li><NavLink to='/'>Contact</NavLink></li> */}
             </ul>
           </nav>
         </div>
