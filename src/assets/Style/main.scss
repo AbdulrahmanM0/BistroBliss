@@ -4,7 +4,10 @@ $secondWhite: #f9f9f7;
 $darkWeetColor: #595c4f;
 $redColor: #ad343e;
 $grayColor: #474747;
+$lightDarkBlue: #495460;
+$darkBlackYellow: #2c2f24;
 $white: #fff;
+$black: #000;
 
 * {
   transition: 0.08s;
@@ -52,6 +55,43 @@ a {
 // common
 .section {
   padding: 50px 0;
+}
+.primary-button {
+  padding: 18px 35px;
+  font-weight: 600;
+  color: $black;
+  border: 3px solid $lightWeetColor;
+  border-radius: 35px;
+  font-weight: 600;
+  margin: 10px;
+  min-width: 165px;
+}
+.primary-button:hover {
+  border: 3px solid $redColor;
+  background-color: $redColor;
+  color: $white;
+}
+
+.first-header-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+
+  h1 {
+    font-size: 5rem;
+    font-family: "bootstrap-icons";
+    color: $darkBlackYellow;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1rem;
+    color: $lightDarkBlue;
+    max-width: 557px;
+  }
 }
 .section-head {
   font-family: bootstrap-icons;
@@ -133,17 +173,18 @@ a {
               display: flex;
               align-items: center;
               justify-content: center;
-              .nav-link {
-                color: #000;
-                font-weight: 600;
-                font-size: 1.05rem;
-                border-radius: 20px;
-                padding: 7px 15px;
-              }
-              .nav-link:active {
-                color: red;
-                background-color: #dbdfd0;
-              }
+              // .nav-link {
+              //   color: #000;
+              //   font-weight: 600;
+              //   font-size: 1.05rem;
+              //   border-radius: 20px;
+              //   padding: 7px 15px;
+              //   text-decoration: none;
+              // }
+              // .nav-link:hover {
+              //   color: red;
+              //   background-color: #dbdfd0;
+              // }
             }
           }
         }
@@ -157,8 +198,8 @@ a {
   }
 }
 .active-link {
-  color: red;
   background-color: #dbdfd0;
+  color: red; /* Set the color for the active link */
 }
 // Footer
 .footer {
@@ -379,6 +420,20 @@ a {
   background-size: cover;
   padding: 200px;
 }
+
+.description-section {
+  background-color: $white;
+
+  .card-container {
+    display: flex;
+    margin-bottom: 10px;
+
+    div:first-child {
+      padding-right: 30px;
+    }
+  }
+}
+
 .guestinfo-section {
   background-color: $secondWhite;
 
@@ -414,7 +469,10 @@ a {
     margin-bottom: 25px;
   }
   .infoimg-container {
-    padding: 45px 20px;
+    padding: 45px;
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
   .infoimg {
     border-radius: 5px;
@@ -422,7 +480,7 @@ a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    max-width: 555px;
+    min-width: 100%;
     max-height: 655px;
   }
 }
@@ -463,4 +521,16 @@ a {
       }
     }
   }
+}
+
+// Menu Page
+.menu-bar {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+// Book table page
+.book-header-section {
+  background-color: $secondWhite;
 }

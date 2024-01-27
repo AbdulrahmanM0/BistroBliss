@@ -33,7 +33,7 @@ export default function GuestInfoSection() {
                 data-aos-duration="2000"
               >
                 <div className="discription">
-                  <h1>We provide healthy food for your family.</h1>
+                  <h1>A little information for our valuable guest</h1>
                   <p>
                     At place, we believe that dining is not just about food, but
                     also about the overall experience. Our staff, renowned for
