@@ -1,11 +1,11 @@
 $weetColor: #b5b9ac;
 $lightWeetColor: #f3f3f0;
-$secondWhite: #F9F9F7;
+$secondWhite: #f9f9f7;
 $darkWeetColor: #595c4f;
 $redColor: #ad343e;
 $grayColor: #474747;
 $lightDarkBlue: #495460;
-$darkBlackYellow: #2C2F24;
+$darkBlackYellow: #2c2f24;
 $white: #fff;
 $black: #000;
 
@@ -57,24 +57,23 @@ a {
 .section {
   padding: 50px 0;
 }
-.primary-button{
-    padding: 18px 35px;
-    font-weight: 600;
-    color: $black;
-    border: 3px solid $lightWeetColor;
-    border-radius: 35px;
-    font-weight: 600;
-    margin: 10px;
-    min-width: 165px;
-  }
-  .primary-button:hover{
+.primary-button {
+  padding: 18px 35px;
+  font-weight: 600;
+  color: $black;
+  border: 3px solid $lightWeetColor;
+  border-radius: 35px;
+  font-weight: 600;
+  margin: 10px;
+  min-width: 165px;
+}
+.primary-button:hover {
   border: 3px solid $redColor;
   background-color: $redColor;
   color: $white;
-
 }
 
-.custom-button{
+.custom-button {
   padding: 14px 35px;
   font-weight: 600;
   border-radius: 35px;
@@ -85,13 +84,13 @@ a {
   color: $white;
   font-family: "system-ui";
 }
-.custom-button:hover{
+.custom-button:hover {
   border: 3px solid $lightWeetColor;
   background-color: $weetColor;
   color: $black;
 }
 
-.first-header-component{
+.first-header-component {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +117,7 @@ a {
   padding: 20px;
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: 0px 0px 14px 0px #0000003d;
 }
 
@@ -439,14 +438,15 @@ a {
   background-size: cover;
   padding: 200px;
 }
-.description-section{
+
+.description-section {
   background-color: $white;
 
-  .card-container{
+  .card-container {
     display: flex;
     margin-bottom: 10px;
 
-    div:first-child{
+    div:first-child {
       padding-right: 30px;
     }
   }
@@ -490,7 +490,6 @@ a {
     display: flex;
     height: 100%;
     align-items: center;
-
   }
   .infoimg {
     border-radius: 5px;
@@ -502,7 +501,7 @@ a {
     max-height: 655px;
   }
 }
-.sponsers-section{
+.sponsers-section {
   background-color: $secondWhite;
 
   .content {
@@ -532,7 +531,7 @@ a {
     z-index: 10;
   }
 
-  .sponser-card{
+  .sponser-card {
     margin: 10px;
     padding: 25px;
     background-color: $white;
@@ -540,23 +539,61 @@ a {
   }
 }
 
+.opinions-section {
+  .content {
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+    }
+    .user-card {
+      background-color: $secondWhite;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      .top-part {
+        border-bottom: 1px solid #7474742a;
+      }
+      .down-part {
+        display: flex;
+        padding: 20px 0;
+        margin-top: 10px;
+        .userdata {
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+      }
+      h5 {
+        color: #ad343e;
+      }
+      p {
+        color: #414536;
+      }
+    }
+  }
+}
+
 // Menu Page
-.menu-bar{
+.menu-bar {
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
 }
 
-
 // Book table page
-.book-header-section{
+.book-header-section {
   background-color: $secondWhite;
 }
-.book-form-section{
+.book-form-section {
   background-color: $secondWhite;
   height: 227px;
 
-  .form-card{
+  .form-card {
     position: relative;
     z-index: 100;
     background-color: $white;
@@ -565,13 +602,13 @@ a {
     max-width: 812px;
     margin: auto;
     margin-bottom: -50%;
-    
-    label{
+
+    label {
       margin-bottom: 15px;
       font-family: "system-ui";
       font-weight: 600;
     }
-    input{
+    input {
       font-family: "system-ui";
       width: 100%;
       padding: 10px;
@@ -580,10 +617,9 @@ a {
       margin-bottom: 25px;
     }
   }
-
 }
 
-.leaflet-container{
+.leaflet-container {
   z-index: 0;
   height: 600px;
 }
