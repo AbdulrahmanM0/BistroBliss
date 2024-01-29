@@ -5,6 +5,17 @@ import BirthdayImg from "../../../../assets/Images/home-page/charming-female-blo
 import WeedingImg from "../../../../assets/Images/home-page/happy-man-wife-sunny-day 1.png";
 import FriendsImg from "../../../../assets/Images/home-page/group-friends-eating-restaurant 1.png";
 import ServiceSupes from "./ServiceSupes/ServiceSupes";
+import SectionHead from "../../../../Common/SectionHead";
+import {
+  Card,
+  CardBody,
+  CardImg,
+  CardText,
+  CardTitle,
+  Col,
+  Container,
+  Row,
+} from "reactstrap";
 
 export default function ServicesSection() {
   const servicedata = [
@@ -30,21 +41,26 @@ export default function ServicesSection() {
     },
   ];
   return (
-    <section>
+    <section className="service-section">
       <div className="section">
-        <div className="service-container">
-          <h1>We also offer unique services for your events</h1>
+        <Container>
+          <SectionHead
+            title={"We also offer unique services for your events"}
+          />
           <div className="service-container">
-            {servicedata.map((item, key) => (
-              <ServiceSupes
-                img={item.img}
-                service={item.service}
-                des={item.des}
-                key={key}
-              />
-            ))}
+            <Row>
+              {servicedata.map((item, key) => (
+                <Col lg={3} md={6} ms={12} key={key}>
+                  <ServiceSupes
+                    img={item.img}
+                    service={item.service}
+                    des={item.des}
+                  />
+                </Col>
+              ))}
+            </Row>
           </div>
-        </div>
+        </Container>
       </div>
     </section>
   );

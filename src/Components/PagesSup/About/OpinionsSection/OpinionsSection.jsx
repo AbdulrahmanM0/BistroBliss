@@ -3,7 +3,7 @@ import Ellipse19 from "../../../../assets/Images/about-page/Ellipse19.png";
 import Ellipse20 from "../../../../assets/Images/about-page/Ellipse20.png";
 import Ellipse21 from "../../../../assets/Images/about-page/Ellipse21.png";
 import OpinionsSupes from "./OpinionsSupes/OpinionsSupes";
-import SectionHead from "../../../../Common/SectionHeadgit";
+import SectionHead from "../../../../Common/SectionHead";
 import { Col, Container, Row } from "reactstrap";
 
 export default function OpinionsSection() {
