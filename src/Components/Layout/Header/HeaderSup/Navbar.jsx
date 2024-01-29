@@ -41,6 +41,24 @@ export default function Navbar() {
                   Menu
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className="nav-link"
+                  activeClassName="active-link"
+                >
+                  Contact
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/booktable"
+                  className="nav-link"
+                  activeClassName="active-link"
+                >
+                  Reservation
+                </NavLink>
+              </li>
               {/* <li><NavLink to='/'>Pages</NavLink></li>
               <li><NavLink to='/'>Contact</NavLink></li> */}
             </ul>

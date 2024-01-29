@@ -5,7 +5,6 @@ import Footer from './Footer/Footer'
 export default function Layout({children}) {
   return (
     <>
-    {console.log(children)}
         <Header />
       {
         children
