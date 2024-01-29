@@ -1,19 +1,21 @@
 import React from "react";
-// import { Redirect } from "react-router-dom"
 
-// Home page
-import Home from "../Pages/Home";
-import About from "../Pages/About"
+import Home from '../Pages/Home'
+import About from '../Pages/About'
+import Menu from '../Pages/Menu'
+import Contact from '../Pages/Contact'
 
 const authProtectedRoutes = [
     //profile
     // { path: "/profile", component: UserProfile },
-]
-const publicRoutes = [
-    { path: "/" , component: Home},
-    { path: "/about", component: About },
-    // { path: "/", exact: true, component: () => <Redirect to="/Home" /> },
+    ]
 
+const publicRoutes = [
+    { path: "/" , element: <Home />},
+    { path: "/about", element: <About /> },
+    { path: "/menu", element: <Menu /> },
+    { path: "/contact", element: <Contact /> },
   ]
+
 
   export { authProtectedRoutes, publicRoutes }
