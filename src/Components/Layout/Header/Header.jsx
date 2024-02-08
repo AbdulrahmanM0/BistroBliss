@@ -5,7 +5,9 @@ import MainHeader from './HeaderSup/MainHeader'
 export default function Header() {
   return (
     <>
-      <SocialBar />
+      <div>
+        <SocialBar />
+      </div>
       <div className='Header'>
         <MainHeader />
       </div>

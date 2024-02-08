@@ -120,6 +120,37 @@ a {
 .box-shadow {
   box-shadow: 0px 0px 14px 0px #0000003d;
 }
+// custom form card
+.form-section-card {
+  background-color: $secondWhite;
+
+  .form-card {
+    position: relative;
+    z-index: 100;
+    background-color: $white;
+    padding: 40px;
+    border-radius: 6px;
+    max-width: 812px;
+    margin: auto;
+    // margin-bottom: -50%;
+
+    label {
+      margin-bottom: 15px;
+      font-family: "system-ui";
+      font-weight: 600;
+    }
+    input {
+      font-family: "system-ui";
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid $weetColor;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
 
 // Header
 .socialBar {
@@ -623,3 +654,14 @@ a {
   z-index: 0;
   height: 600px;
 }
+
+// sign in page
+.signin{
+  height: 90vh;
+  background-color: url();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
