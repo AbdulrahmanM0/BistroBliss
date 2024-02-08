@@ -1,14 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from './Components/Layout/Header/Header'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Menu from './Pages/Menu'
-import BookTable from './Pages/BookTable'
-import Contact from './Pages/Contact'
 import Footer from './Components/Layout/Footer/Footer'
-import Profile from './Pages/Profile'
-import SignIn from './Pages/SignIn'
-import SignUp from './Pages/SignUp'
 import AOS from 'aos';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
