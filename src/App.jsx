@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
-import Header from "./Components/Layout/Header/Header";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Menu from "./Pages/Menu";
-import BookTable from "./Pages/BookTable";
-import Contact from "./Pages/Contact";
-import Footer from "./Components/Layout/Footer/Footer";
-import AOS from "aos";
-import SignIn from "./Pages/SignIn";
+import React, { useEffect } from 'react'
+import Header from './Components/Layout/Header/Header'
+import Footer from './Components/Layout/Footer/Footer'
+import AOS from 'aos';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { publicRoutes , authProtectedRoutes} from './Routes/Index'
 
 function App() {
   useEffect(() => {
@@ -19,14 +14,14 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/booktable" element={<BookTable />} />
-      </Routes>
+        <Routes>
+          {publicRoutes.map(item => 
+            <Route path={item.path} element={item.element} />
+            )}
+          {authProtectedRoutes.map(item => 
+            <Route path={item.path} element={item.element} />
+            )}
+        </Routes>
       <Footer />
     </>
   );
