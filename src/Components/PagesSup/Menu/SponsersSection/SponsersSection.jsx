@@ -12,6 +12,7 @@ import Sponser9 from '../../../../assets/Images/menu/Sponsers/3 (2).png'
 
 export default function SponsersSection() {
     const Sponsers = [Sponser1,Sponser2,Sponser3,Sponser4,Sponser5,Sponser6,Sponser7,Sponser8,Sponser9]
+    
   return (
     <section className='sponsers-section'>
         <div className='section'>
