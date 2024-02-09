@@ -1,4 +1,5 @@
 $weetColor: #b5b9ac;
+$secondweetcolor: #dbdfd0;
 $lightWeetColor: #f3f3f0;
 $secondWhite: #f9f9f7;
 $darkWeetColor: #595c4f;
@@ -8,10 +9,9 @@ $lightDarkBlue: #495460;
 $darkBlackYellow: #2c2f24;
 $white: #fff;
 $black: #000;
-
 * {
   transition: 0.08s;
-  font-family: "bootstrap-icons";
+  // font-family: "bootstrap-icons";
 }
 ul {
   margin: 0;
@@ -271,6 +271,14 @@ a {
           }
         }
       }
+
+      .slice2 {
+        color: $secondWhite;
+        p {
+          color: $weetColor;
+        }
+      }
+
       .slice3 {
         h6 {
           color: $white;
@@ -616,6 +624,20 @@ a {
       border: 1px solid $weetColor;
       margin-bottom: 25px;
     }
+  }
+}
+
+.service-container {
+  .meal-card {
+    border: 2px solid $secondweetcolor;
+  }
+  .meal-info {
+    text-align: center;
+  }
+  .card-price {
+    font-weight: 600;
+    color: $redColor;
+    margin-bottom: 20px;
   }
 }
 

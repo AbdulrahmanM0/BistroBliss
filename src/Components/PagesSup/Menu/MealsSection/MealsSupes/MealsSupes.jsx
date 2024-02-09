@@ -12,15 +12,17 @@ import {
 
 export default function MealsSupes() {
   return (
-    <Card className="my-2 border-0">
+    <Card className="my-2 meal-card ">
       <CardImg
         alt="Card image cap"
         src={EggImg}
         className="rounded mb-3 "
         width="100%"
       />
-      <CardBody>
-        <CardTitle tag="h4">$ 9.99</CardTitle>
+      <CardBody className="meal-info">
+        <CardTitle tag="h4" className="card-price">
+          $ 9.99
+        </CardTitle>
         <CardSubtitle className="card-title mb-3" tag="h4">
           Fried Eggs
         </CardSubtitle>
