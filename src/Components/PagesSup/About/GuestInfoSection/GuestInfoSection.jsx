@@ -28,6 +28,7 @@ export default function GuestInfoSection() {
           <Row>
             <Col lg={6} md={6} sm={12}>
               <div
+                data-aos="zoom-in"
                 className="content details"
                 data-aos="fade-up"
                 data-aos-duration="2000"

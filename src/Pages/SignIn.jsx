@@ -1,6 +1,6 @@
 import React from "react";
-import SigningUp from "../Components/PagesSup/Signing/SigningUp/SigningUp.1";
+import Signingsup from "../Components/PagesSup/Signing/SigningUp/Signingsup";
 
 export default function SignIn() {
-  return <SigningUp />;
+  return <Signingsup />;
 }

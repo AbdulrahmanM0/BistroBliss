@@ -1,7 +1,5 @@
-import React from 'react'
-
-export default function SignUp() {
-  return (
-    <div>SignUp</div>
-  )
+import React from "react";
+import SiginUpSup from "../Components/PagesSup/siginUP/SiginUpSup";
+export default function Signup() {
+  return <SiginUpSup />;
 }
