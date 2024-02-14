@@ -1,20 +1,15 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Auth from "./Auth";
+import { useSelector } from "react-redux";
 
-export default function Navbar() {
-  const [windowWidth, setWindowWidth] = useState();
+export default function Navbar({windowWidth}) {
+  const state = useSelector(state => state.SignIn.value)
+  console.log(state)
 
-  useLayoutEffect(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
-  }, []);
 
   return (
     <>
-      {windowWidth > 1000 && (
         <div className="navbar">
           <nav>
             <ul>
@@ -43,28 +38,20 @@ export default function Navbar() {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
-                  className="nav-link"
-                  activeClassName="active-link"
-                >
-                  Contact
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/booktable"
+                  to={state?"/booktable":"/signin"}
                   className="nav-link"
                   activeClassName="active-link"
                 >
                   Reservation
                 </NavLink>
               </li>
-              {/* <li><NavLink to='/'>Pages</NavLink></li>
-              <li><NavLink to='/'>Contact</NavLink></li> */}
+              <li>
+                <Auth windowWidth={windowWidth}/>
+              </li>
+              
             </ul>
           </nav>
         </div>
-      )}
     </>
   );
 }

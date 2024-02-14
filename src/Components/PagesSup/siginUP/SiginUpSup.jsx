@@ -1,5 +1,6 @@
 import { Formik, Form } from "formik";
 import React from "react";
+import { Link } from "react-router-dom";
 import { Col, Row } from "reactstrap";
 
 export default function siginUpSup() {
@@ -18,11 +19,10 @@ export default function siginUpSup() {
           <Formik initialValues={intialState} onSubmit={handelSubmit}>
             {(props) => (
               <Form>
-                <h1>Sigin Up</h1>
+                <Link to="/"><h1>Sigin Up</h1></Link>
                 <Row>
                   <Col lg={6} md={6} sm={12}>
                     <div className="input-box">
-                      {console.log(props)}
                       <input
                         type="text"
                         name="userName"
@@ -107,7 +107,7 @@ export default function siginUpSup() {
                 <div className="regester-link">
                   <p>
                     Do you have an account?
-                    <a href="/signin">Sigin In</a>
+                    <Link to="/signin">Sigin In</Link>
                   </p>
                 </div>
               </Form>

@@ -9,15 +9,13 @@ import SignIn from "../Pages/SignIn";
 import SignUp from "../Pages/SignUp";
 import ProfilePage from "../Pages/ProfilePage";
 
-console.log(Home);
-
 const authProtectedRoutes = [{ path: "/profile", element: <Profile /> }];
 
 const publicRoutes = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
   { path: "/menu", element: <Menu /> },
-  { path: "/contact", element: <Contact /> },
+  // { path: "/contact", element: <Contact /> },
   { path: "/booktable", element: <BookTable /> },
   { path: "/signin", element: <SignIn /> },
   { path: "/SignUp", element: <SignUp /> },
