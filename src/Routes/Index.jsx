@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact";
 import Profile from "../Pages/Profile";
 import SignIn from "../Pages/SignIn";
 import SignUp from "../Pages/SignUp";
+import ProfilePage from "../Pages/ProfilePage";
 
 console.log(Home);
 
@@ -19,7 +20,8 @@ const publicRoutes = [
   { path: "/contact", element: <Contact /> },
   { path: "/booktable", element: <BookTable /> },
   { path: "/signin", element: <SignIn /> },
-  { path: "/signup", element: <SignUp /> },
+  { path: "/SignUp", element: <SignUp /> },
+  { path: "/Profle", element: <ProfilePage /> },
 ];
 
 export { authProtectedRoutes, publicRoutes };
