@@ -1,17 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  value: false,
-  username: ''
+  username: '',
 }
 
-export const signInSlice = createSlice({
+export const UserSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    SignInAction: (state , action) => {
-      state.value = true;
-      state.username = action.payload;
+    SignInAction: (state) => {
+      state.value = true
     },
     LogOutAction: (state) => {
         state.value = false
@@ -26,6 +24,6 @@ export const signInSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { SignInAction , LogOutAction} = signInSlice.actions
+export const { SignInAction , LogOutAction} = UserSlice.actions
 
-export default signInSlice.reducer
+export default UserSlice.reducer

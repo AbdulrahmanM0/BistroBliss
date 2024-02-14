@@ -1,22 +1,33 @@
 import { Formik, Form } from "formik";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { SignInAction } from "../../../../Store/SignIn/signInSlice";
 
 export default function Signingsup() {
+  const state = useSelector(state => state)
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
   const intialState = {
     userName: "",
     password: "",
   };
-  const handelSubmit = (values) => console.log(values);
-  return (
+  const handelSubmit = async (values) => { 
+    await dispatch(SignInAction(values.userName))
+    navigate('/')
+    console.log(state)
+    console.log(values)};
+    console.log(state)
+    return (
     <section className="login-body">
       <div>
         <div className="formik">
           <Formik initialValues={intialState} onSubmit={handelSubmit}>
             {(props) => (
               <Form>
-                <h1>Login</h1>
+                <Link to="/"><h1>Login</h1></Link>
                 <div className="input-box">
-                  {console.log(props)}
                   <input
                     type="text"
                     name="userName"
@@ -25,10 +36,9 @@ export default function Signingsup() {
                       props.handleChange(e);
                     }}
                   />
-                  <i class="bi bi-person-fill"></i>
+                  <i className="bi bi-person-fill"></i>
                 </div>
                 <div className="input-box">
-                  {console.log(props)}
                   <input
                     type="password"
                     name="password"
@@ -37,7 +47,7 @@ export default function Signingsup() {
                       props.handleChange(e);
                     }}
                   />
-                  <i class="bi bi-lock-fill"></i>
+                  <i className="bi bi-lock-fill"></i>
                 </div>
                 <div className="remember-forget">
                   <label>
@@ -52,7 +62,7 @@ export default function Signingsup() {
                 <div className="regester-link">
                   <p>
                     Don`t have an account?
-                    <a href="/SignUp">Regester</a>
+                    <Link to="/SignUp">Regester</Link>
                   </p>
                 </div>
               </Form>

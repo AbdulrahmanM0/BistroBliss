@@ -9,14 +9,14 @@ export default function ProfilePageSup() {
     email: "",
     password: "",
   };
-  const handelSubmit = (values) => console.log(values);
+  const handelSubmit = (values) => { console.log('submited successfuly',values)};
 
   return (
     <section className="profile-body">
       <div className="profile-container">
         <Formik initialValues={intialState} onSubmit={handelSubmit}>
           {(props) => (
-            <Form>
+            <Form onSubmit={props.handleSubmit}>
               <h1>User Data</h1>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -69,7 +69,6 @@ export default function ProfilePageSup() {
                 </Col>
                 <Col lg={6} md={6} sm={12}>
                   <div className="input-box">
-                    {console.log(props)}
                     <input
                       type="password"
                       name="password"
@@ -90,11 +89,6 @@ export default function ProfilePageSup() {
                   <button type="submit" className="btn-login">
                     Update
                   </button>
-                </Col>
-                <Col>
-                  {/* <button type="submit" className="btn-login">
-                    Submit
-                  </button> */}
                 </Col>
               </Row>
             </Form>
