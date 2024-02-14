@@ -1,7 +1,5 @@
 import React from "react";
-import EggImg from "../../../../../assets/Images/menu/pexels-daniela-constantini-5591664 1.png";
 import {
-  Button,
   Card,
   CardBody,
   CardImg,
@@ -10,25 +8,28 @@ import {
   CardTitle,
 } from "reactstrap";
 
-export default function MealsSupes() {
+export default function MealsSupes({
+  mealImg,
+  price,
+  mealName,
+  mealDiscription,
+}) {
   return (
     <Card className="my-2 meal-card ">
       <CardImg
         alt="Card image cap"
-        src={EggImg}
+        src={mealImg}
         className="rounded mb-3 "
         width="100%"
       />
       <CardBody className="meal-info">
         <CardTitle tag="h4" className="card-price">
-          $ 9.99
+          {price}
         </CardTitle>
         <CardSubtitle className="card-title mb-3" tag="h4">
-          Fried Eggs
+          {mealName}
         </CardSubtitle>
-        <CardText tag="p">
-          Made with eggs, lettuce, salt, oil and other ingredients.
-        </CardText>
+        <CardText tag="p">{mealDiscription}</CardText>
       </CardBody>
     </Card>
   );
