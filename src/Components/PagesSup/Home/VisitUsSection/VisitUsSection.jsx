@@ -1,8 +1,11 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'reactstrap'
 import VisitsImage from '../../../../assets/Images/home-page/VisitSection.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function VisitUsSection() {
+    const navigate = useNavigate()
+
   return (
     <section className='visitus-section'>
         <div className='section'>
@@ -29,7 +32,7 @@ export default function VisitUsSection() {
                             <p>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
                         </div>
                         <div>
-                            <Button className='border-3 custom-button' color='dark' outline>More About Us</Button>
+                            <Button onClick={()=>navigate('/about')} className='border-3 custom-button' color='dark' outline>More About Us</Button>
                         </div>
                         </div>
                     </Col>

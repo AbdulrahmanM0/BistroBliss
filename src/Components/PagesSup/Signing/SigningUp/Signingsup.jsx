@@ -31,6 +31,7 @@ export default function Signingsup() {
                   <input
                     type="text"
                     name="userName"
+                    value='Hazem'
                     placeholder="User Name"
                     onChange={(e) => {
                       props.handleChange(e);
