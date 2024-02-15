@@ -8,6 +8,7 @@ import Profile from "../Pages/Profile";
 import SignIn from "../Pages/SignIn";
 import SignUp from "../Pages/SignUp";
 import ProfilePage from "../Pages/ProfilePage";
+import Blog from "../Components/PagesSup/Blogs/Blog";
 
 const authProtectedRoutes = [{ path: "/profile", element: <Profile /> }];
 
@@ -15,7 +16,7 @@ const publicRoutes = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
   { path: "/menu", element: <Menu /> },
-  // { path: "/contact", element: <Contact /> },
+  { path: "/blog", element: <Blog /> },
   { path: "/booktable", element: <BookTable /> },
   { path: "/signin", element: <SignIn /> },
   { path: "/SignUp", element: <SignUp /> },

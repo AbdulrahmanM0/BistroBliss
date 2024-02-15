@@ -18,7 +18,7 @@ export default function MealsSupes({
     <Card className="my-2 meal-card ">
       <CardImg
         alt="Card image cap"
-        src={mealImg}
+        src={`${mealImg}`}
         className="rounded mb-3 "
         width="100%"
       />

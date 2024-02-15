@@ -18,9 +18,14 @@ export default function MainHeader({windowWidth}) {
             </Link>
           </div>
           {windowWidth > 1000 ? (
+            <>
           <div>
             <Navbar windowWidth={windowWidth}/>
           </div>
+          <div>
+            <Auth windowWidth={windowWidth}/>
+          </div>
+          </>
           ):
           <div>
             <SideBar windowWidth={windowWidth}/>

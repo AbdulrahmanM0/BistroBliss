@@ -19,8 +19,6 @@ import Auth from '../Header/HeaderSup/Auth';
 import { LogOutAction } from '../../../Store/SignIn/signInSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
-window.onclick = e => console.log(e.target)
-
 export default function TemporaryDrawer({windowWidth}) {
     const navigate = useNavigate();
     const dispatch = useDispatch()

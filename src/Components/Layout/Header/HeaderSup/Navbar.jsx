@@ -9,7 +9,7 @@ export default function Navbar({windowWidth}) {
 
 
   return (
-    <>
+    <div className="d-flex justify-content-between align-items-center">
         <div className="navbar">
           <nav>
             <ul>
@@ -25,6 +25,15 @@ export default function Navbar({windowWidth}) {
                   activeClassName="active-link"
                 >
                   About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/blog"
+                  className="nav-link"
+                  activeClassName="active-link"
+                >
+                  Blogs
                 </NavLink>
               </li>
               <li>
@@ -45,13 +54,9 @@ export default function Navbar({windowWidth}) {
                   Reservation
                 </NavLink>
               </li>
-              <li>
-                <Auth windowWidth={windowWidth}/>
-              </li>
-              
             </ul>
           </nav>
         </div>
-    </>
+    </div>
   );
 }
