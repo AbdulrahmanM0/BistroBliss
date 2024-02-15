@@ -913,3 +913,136 @@ a {
     -o-transition: ease-in-out 0.3s;
   }
 }
+
+// blog page
+.blog {
+  padding: 60px 0 30px 0;
+}
+.blogPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.blogPage h1 {
+  color: #2c2f24;
+  font-family: "Playfair Display";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px;
+  margin-bottom: 24px;
+}
+.blogPage p {
+  width: 50%;
+  color: #495460;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.gridBlog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 10px;
+  padding: 40px 0 100px 0;
+}
+.itemgrid img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card_menu {
+  margin-bottom: 80px;
+}
+.card-body {
+  text-align: center;
+  padding: 20px 0;
+}
+.card-date-blog {
+  color: #414536;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 0 10px;
+}
+.card-text {
+  color: #2c2f24;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0px 5px;
+  line-height: 26px;
+}
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .blogPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blogPage h1 {
+    color: #2c2f24;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px;
+    margin-bottom: 30px;
+  }
+  .blogPage p {
+    width: 90%;
+    color: #2c2f24;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  .gridBlog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .blogPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blogPage h1 {
+    color: #2c2f24;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px;
+    margin-bottom: 30px;
+  }
+  .blogPage p {
+    width: 90%;
+    color: #2c2f24;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  .gridBlog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px 10px;
+  }
+}

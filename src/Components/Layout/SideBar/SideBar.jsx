@@ -13,6 +13,7 @@ import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
 import EventSeatIcon from '@mui/icons-material/EventSeat';
 import LogoutIcon from '@mui/icons-material/Logout';
+import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import { NavLink } from 'reactstrap';
 import { useNavigate } from 'react-router-dom';
 import Auth from '../Header/HeaderSup/Auth';
@@ -71,6 +72,22 @@ export default function TemporaryDrawer({windowWidth}) {
                   activeClassName="active-link"
                 >
                   About
+                </NavLink>
+              <ListItemText/>
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton onClick={()=>navigate("/blog")}>
+              <ListItemIcon>
+                <ViewModuleIcon />
+              </ListItemIcon>
+              <NavLink
+                  to="/about"
+                  className="nav-link"
+                  activeClassName="active-link"
+                >
+                  Blogs
                 </NavLink>
               <ListItemText/>
             </ListItemButton>
