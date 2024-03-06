@@ -1,10 +1,10 @@
-import React from 'react'
-import goup from '../Common/GoUp'
-import ContactHeaderSection from '../Components/PagesSup/Contact/ContactHeaderSection/ContactHeaderSection'
+import React from "react";
+import ContactHeaderSection from "../Components/PagesSup/Contact/ContactHeaderSection/ContactHeaderSection";
+import goup from "../Common/GoUp";
 import SignIn from "./SignIn";
 
 export default function Contact() {
-  goup()
+  goup();
 
   return (
     <div>

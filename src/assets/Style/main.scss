@@ -72,6 +72,9 @@ a {
   background-color: $redColor;
   color: $white;
 }
+.pointer{
+  cursor: pointer;
+}
 
 .custom-button {
   padding: 14px 35px;
@@ -149,8 +152,6 @@ a {
     }
   }
 }
-
-
 
 // Header
 .socialBar {
@@ -678,7 +679,7 @@ a {
 }
 
 // sign in page
-.signin{
+.signin {
   height: 90vh;
   background-color: url();
   display: flex;
@@ -686,4 +687,229 @@ a {
   justify-content: center;
 }
 
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../Images/auth/pexels-ella-olsson-1640773.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
+.formik {
+  max-width: 520px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #c1c1c1;
+  color: #000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 30px;
+  margin: 30px 0px;
+}
+
+.formik h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #d04848;
+}
+
+.input-box {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0px;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #c1c1c1;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  font-size: 16px;
+  color: #dd4b4b;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  right: 15px;
+  color: #d04848;
+}
+
+.input-box input::placeholder {
+  color: #c18989;
+}
+
+.remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+  accent-color: #bab5b5;
+  margin-right: 3px;
+}
+
+.remember-forget a {
+  color: #dd4b4b;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  width: 100%;
+  height: 45px;
+  background-color: #d04848;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  background-color: transparent;
+  color: #ad343e;
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+
+.regester-link {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.regester-link p a {
+  color: #d04848;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.regester-link p a:hover {
+  text-decoration: underline;
+}
+
+// profile page
+
+.profile-body {
+  background-image: url(../Images/auth/profile-page.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .profile-container {
+    max-width: 600px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #c1c1c1;
+    color: #000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+    margin: 30px 0px;
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      color: #d04848;
+    }
+  }
+
+  .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    position: relative;
+  }
+
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #c1c1c1;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    font-size: 16px;
+    color: #341d1d;
+    padding: 20px 45px 20px 20px;
+  }
+
+  .input-box input::placeholder {
+    color: #d07e48;
+  }
+
+  .btn-profile {
+    width: 100%;
+    height: 45px;
+    background-color: #d07e48;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .btn-profile:hover {
+    background-color: transparent;
+    color: #d07e48;
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+  }
+}

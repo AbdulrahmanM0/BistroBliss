@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SectionHead({title}) {
+export default function SectionHead({ title }) {
   return (
     <div
       className="section-head"
