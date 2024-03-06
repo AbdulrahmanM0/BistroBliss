@@ -658,8 +658,14 @@ a {
     }
   }
 }
-
+section{
+  overflow: hidden;
+}
+.book-form-section{
+  overflow: visible !important;
+}
 .service-container {
+  overflow: hidden;
   .meal-card {
     border: 2px solid $secondweetcolor;
   }

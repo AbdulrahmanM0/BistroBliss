@@ -9,7 +9,7 @@ import "bootstrap-icons/font/bootstrap-icons.css"
 import './assets/Style/main.scss'
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './Store';
+import store from './Store/index.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
