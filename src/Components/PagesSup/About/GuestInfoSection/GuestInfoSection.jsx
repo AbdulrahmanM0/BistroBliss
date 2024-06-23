@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "reactstrap";
 import SectionSupes from "./SectionSupes/SectionSupes";
-import sectionInfoImg from "../../../../assets/Images/about-page/sectionInfoimg.png";
+// import sectionInfoImg from "../../../../assets/Images/about-page/sectionInfoimg.png";
 
 export default function GuestInfoSection() {
   const cardData = [
@@ -58,7 +58,7 @@ export default function GuestInfoSection() {
             </Col>
             <Col lg={6} md={6} sm={12}>
               <div className="infoimg-container">
-                <img src={sectionInfoImg} className="infoimg ms-auto d-block" />
+                {/* <img src={sectionInfoImg} className="infoimg ms-auto d-block" /> */}
               </div>
             </Col>
           </Row>
