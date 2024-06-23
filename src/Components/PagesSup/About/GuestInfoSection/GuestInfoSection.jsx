@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "reactstrap";
 import SectionSupes from "./SectionSupes/SectionSupes";
-import sectionInfoImg from "../../../../assets/Images/about-page/sectionInfoImg.png";
+import sectionInfoImg from "../../../../assets/Images/about-page/sectionInfoimg.png";
 
 export default function GuestInfoSection() {
   const cardData = [
